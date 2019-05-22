@@ -8,17 +8,9 @@ class Backer
     @backed_projects = []
   end #end init
   
-  def back_project(proj)
-    @backed_projects << proj
-    add_backer(new_proj)
+  def back_project(project)
+    @backed_projects << project
+    
   end #end back_project
-  
-  def project_name=(pname)
-    if (self.title.nil?)
-      self.title = Project.new(pname)
-    else
-      self.title = pname
-    end
-  end
  
 end #end class
