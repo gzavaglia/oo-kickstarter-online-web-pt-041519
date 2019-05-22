@@ -1,7 +1,7 @@
 require_relative "../lib/project.rb"
 class Backer
   attr_reader :backed_projects
-  attr_accessor :name
+  attr_accessor :name, :project
   
   def initialize(b_name)
     @name = b_name
@@ -14,12 +14,5 @@ class Backer
     add_backer(new_proj)
   end #end back_project
   
-  # def artist_name=(name)
-  #   if (self.artist.nil?)
-  #     self.artist = Artist.new(name)
-  #   else
-  #     self.artist.name = name
-  #   end
-  # end
  
 end #end class
