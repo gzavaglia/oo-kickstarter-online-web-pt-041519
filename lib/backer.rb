@@ -14,5 +14,12 @@ class Backer
     add_backer(new_proj)
   end #end back_project
   
+  def backer_name=(bname)
+    if (self.artist.nil?)
+      self.artist = Artist.new(name)
+    else
+      self.artist.name = name
+    end
+  end
  
 end #end class
