@@ -1,3 +1,4 @@
+require_relative "../lib/backer.rb"
 class Project
   attr_accessor :title
   attr_reader :backers
