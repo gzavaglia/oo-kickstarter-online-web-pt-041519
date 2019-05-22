@@ -11,7 +11,7 @@ class Backer
   def back_project(proj)
     @backed_projects << project
     new_proj = Project.new(proj)
-    Project.add_backer(new_proj)
+    Project.add_backer(proj)
   end #end back_project
   
   # def artist_name=(name)
