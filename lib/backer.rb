@@ -6,4 +6,8 @@ class Backer
     @name = b_name
     @backed_projects = []
   end #end init
+  
+  def backed_project()
+    
+  end #end backed_project
 end #end class
